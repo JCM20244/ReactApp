@@ -18,7 +18,7 @@ export default function Devices() {
   const [reagentDetails, setReagentDetails] =useState([]);
   // const title = 'DETAILS';
     useEffect(() => {
-      fetch("http://localhost:8000/device")
+      fetch("https://reagentvalidation-c85e925aa2e8.herokuapp.com/device")
         .then((res) => res.json())
         .then((data) =>{ 
           setDevice(data.message);

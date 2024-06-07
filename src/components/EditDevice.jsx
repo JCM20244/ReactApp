@@ -34,14 +34,14 @@ export default function EditDevice(props) {
     
     function submitHendler(e) {
         e.preventDefault();
-        axios.put('http://localhost:8000/update/' + id, { ref: values.ref,lot: values.lot,quantity: values.quantity,name:values.name,pdate: values.proddate,expdate: values.expdate, vendor: values.vendor})
+        axios.put('https://reagentvalidation-c85e925aa2e8.herokuapp.com/update/' + id, { ref: values.ref,lot: values.lot,quantity: values.quantity,name:values.name,pdate: values.proddate,expdate: values.expdate, vendor: values.vendor})
             .then((data) => {
                 console.log(data);
                 window.location.reload(false);
             });
     }
     function deleteHendler(e){
-        axios.delete('http://localhost:8000/delete/'+id).then((data)=>{
+        axios.delete('https://reagentvalidation-c85e925aa2e8.herokuapp.com/delete/'+id).then((data)=>{
             console.log(data);
             window.location.reload(false);
         });  

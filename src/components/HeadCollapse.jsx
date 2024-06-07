@@ -18,7 +18,7 @@ export default class HeadCollapse extends Component {
                 <Nav className='fw-bold Links  py-2 ps-5' >
                     <Nav.Link href="/" className='Links'>Home</Nav.Link>
                     <Nav.Link href="/devices" className='Links'><FontAwesomeIcon icon={faEllipsis} fontSize={20} /></Nav.Link>
-                    <Nav.Link href="/controle" className='Links'> <Badge bg= ''  className='border ' style={{backgroundColor: '#ebebeb', borderRadius: 25}}><span className='text-primary'>JC</span></Badge></Nav.Link>
+                    <Nav.Link href="#" className='Links'> <Badge bg= ''  className='border ' style={{backgroundColor: '#ebebeb', borderRadius: 25}}><span className='text-primary'>JC</span></Badge></Nav.Link>
                     <Nav.Link href="#" className='Links'><FontAwesomeIcon icon={faBell} /> </Nav.Link> 
                 </Nav>
             </Navbar.Collapse>

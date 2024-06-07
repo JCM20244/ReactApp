@@ -8,7 +8,7 @@ export default function FindDevice() {
     const [device, setDevice]= useState([]);
     const [openDetails,setOpenDetails] = useState(false);
     const findHandler = ()=>{
-        axios.get('http://localhost:8000/find/'+content).then((res)=>{
+        axios.get('https://reagentvalidation-c85e925aa2e8.herokuapp.com/find/'+content).then((res)=>{
             console.log(res.data);
             setDevice(res.data.message[0]);
             setOpenDetails(true);

@@ -15,7 +15,7 @@ export default function Forms ({getdataform,getRef}) {
     const [showFind,setShowFind]= useState(false);
     const submitHendler = e =>{
         e.preventDefault();
-        axios.post('http://localhost:8000/add',{reference: reference,lot: lot,quantity:quantity,name:name,pdate: pdate,expDate: expDate, vendor: vendor},)
+        axios.post('https://reagentvalidation-c85e925aa2e8.herokuapp.com/add',{reference: reference,lot: lot,quantity:quantity,name:name,pdate: pdate,expDate: expDate, vendor: vendor},)
         .then((data)=>{
             console.log(data.data);
             getRef(reference);
