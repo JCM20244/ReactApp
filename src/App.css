@@ -1,0 +1,48 @@
+*{
+  font-family:  Arial, sans-serif;
+}
+.App {
+  font-family:  Arial, sans-serif;
+}
+
+.App-header {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2em;
+  color: rgb(47, 140, 226);
+  font-weight: bold;
+}
+ul li{
+  margin-left: 8px;
+  margin-right: 8px; 
+}
+.TitleForm{
+  justify-content: center;
+  font-weight: bold;
+}
+.FormMain{
+  background-color: #e6e7f0;
+}
+Form Label{
+  color: #2a4144;
+  font-weight: bold;
+}
+.Links{
+  color:#f4f6f8;
+}
+.ImageHead{
+  mix-blend-mode: multiply;
+}
+.tableTh div{
+  color:#2472bb;
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 1em;
+}
+.TitleText{
+  font-size: 1.2em;
+  font-family: Arial;
+}
